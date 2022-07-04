@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Vehicule">
+
+    <TextView
+        android:id="@+id/textViewTitleVehicule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saisie de véhicule"
+        android:textSize="30sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineVehicule"/>
+
+    <TextView
+        android:id="@+id/textViewImmatriculation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Immatriculation"
+        app:layout_constraintBottom_toTopOf="@+id/textViewMarque"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guidelineVehicule" />
+
+    <TextView
+        android:id="@+id/textViewMarque"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Marque"
+        app:layout_constraintTop_toBottomOf="@id/textViewImmatriculation"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/textViewModele" />
+
+    <TextView
+        android:id="@+id/textViewModele"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Modèle"
+        app:layout_constraintTop_toBottomOf="@id/textViewMarque"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/textViewCouleur"/>
+
+    <TextView
+        android:id="@+id/textViewCouleur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Couleur"
+        app:layout_constraintTop_toBottomOf="@id/textViewModele"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/textViewPuissance" />
+
+    <TextView
+        android:id="@+id/textViewPuissance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Puissance"
+        app:layout_constraintTop_toBottomOf="@id/textViewCouleur"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/textViewCategorie"/>
+
+    <TextView
+        android:id="@+id/textViewCategorie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Catégorie"
+        app:layout_constraintTop_toBottomOf="@id/textViewPuissance"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/textViewBoite" />
+
+    <Spinner
+        android:id="@+id/spinnerCategorie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:entries="@array/categorie_array"
+        app:layout_constraintBottom_toBottomOf="@id/textViewCategorie"
+        app:layout_constraintLeft_toRightOf="@id/textViewCategorie"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textViewCategorie"/>
+
+    <TextView
+        android:id="@+id/textViewBoite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Boîte de vitesse"
+        app:layout_constraintTop_toBottomOf="@id/textViewCategorie"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/textViewAnnee"/>
+
+    <Spinner
+        android:id="@+id/spinnerBoite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:entries="@array/boite_array"
+        app:layout_constraintBottom_toBottomOf="@id/textViewBoite"
+        app:layout_constraintLeft_toRightOf="@id/textViewBoite"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textViewBoite"/>
+
+    <TextView
+        android:id="@+id/textViewAnnee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Année"
+        app:layout_constraintTop_toBottomOf="@id/textViewBoite"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineVehicule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
