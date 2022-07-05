@@ -56,11 +56,18 @@ public class VehiculeFragment extends Fragment {
     }
 
     private void MiseAJourList() {
-        colVehicule.add(new Vehicule("xx-000-xx","peugeot","208", Color.valueOf(Color.blue(22)),200,"citadine","manuelle", new Date(2020)));
-        colVehicule.add(new Vehicule("bb-111-bb","citroen","208", Color.valueOf(Color.blue(22)),200,"citadine","manuelle", new Date(2020)));
-        colVehicule.add(new Vehicule("cc-222-cc","volkswagen","208", Color.valueOf(Color.blue(22)),200,"citadine","manuelle", new Date(2020)));
+        colVehicule.add(new Vehicule("xx-000-xx","Peugeot","208", Color.valueOf(Color.blue(22)),200,"citadine","manuelle", new Date(2020)));
+        colVehicule.add(new Vehicule("bb-111-bb","Citroen","C3", Color.valueOf(Color.blue(22)),200,"citadine","manuelle", new Date(2020)));
+        colVehicule.add(new Vehicule("cc-222-cc","Volkswagen","Polo", Color.valueOf(Color.blue(22)),200,"citadine","automatique", new Date(2020)));
+        colVehicule.add(new Vehicule("dd-333-dd","Audi","A1", Color.valueOf(Color.blue(22)),200,"citadine","manuelle", new Date(2020)));
+        colVehicule.add(new Vehicule("ee-444-ee","BMW","Série 1", Color.valueOf(Color.blue(22)),200,"citadine","manuelle", new Date(2020)));
+        colVehicule.add(new Vehicule("bb-111-bb","Skoda","octavia", Color.valueOf(Color.blue(22)),200,"citadine","manuelle", new Date(2020)));
+        colVehicule.add(new Vehicule("cc-222-cc","Volkswagen","Passat", Color.valueOf(Color.green(15)),200,"Berline","manuelle", new Date(2015)));
+        colVehicule.add(new Vehicule("dd-333-dd","Maserati","Gracale", Color.valueOf(Color.blue(22)),200,"SUV","automatique", new Date(2020)));
+        colVehicule.add(new Vehicule("ee-444-ee","Ferrari","GTO", Color.valueOf(Color.blue(22)),200,"Supercar","automatique", new Date(2020)));
+        colVehicule.add(new Vehicule("bb-111-bb","DS","DS3", Color.valueOf(Color.blue(22)),200,"citadine","manuelle", new Date(2020)));
+        colVehicule.add(new Vehicule("cc-222-cc","Hyundai","i20", Color.valueOf(Color.blue(22)),200,"citadine","manuelle", new Date(2018)));
         colVehicule.add(new Vehicule("dd-333-dd","audi","208", Color.valueOf(Color.blue(22)),200,"citadine","manuelle", new Date(2020)));
-        colVehicule.add(new Vehicule("ee-444-ee","bmw","208", Color.valueOf(Color.blue(22)),200,"citadine","manuelle", new Date(2020)));
 
     }
 

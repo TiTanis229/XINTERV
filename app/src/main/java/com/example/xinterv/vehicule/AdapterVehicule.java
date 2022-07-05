@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.TextView;
 
 import androidx.constraintlayout.widget.ConstraintLayout;
 
@@ -14,8 +15,8 @@ import java.util.ArrayList;
 
 public class AdapterVehicule extends BaseAdapter {
 
-    private ArrayList<Vehicule> vehiculeArrayList;
-    private LayoutInflater layoutInflater;
+    private final ArrayList<Vehicule> vehiculeArrayList;
+    private final LayoutInflater layoutInflater;
     ConstraintLayout itemView;
 
     public AdapterVehicule(ArrayList<Vehicule> vehiculeArrayList, Context context) {
@@ -50,6 +51,13 @@ public class AdapterVehicule extends BaseAdapter {
             //Recyclage de l'ItemVieew
             itemView = (ConstraintLayout) convertView;
         }
+
+        TextView txtImmatriculation = itemView.findViewById(R.id.textViewImmatriculation);
+        txtImmatriculation.setText(vehiculeArrayList.get(position).getImmatrulation());
+
+        TextView txtDetail = itemView.findViewById(R.id.textViewDetail);
+        txtDetail.setText(vehiculeArrayList.get(position).getMarque() + " " + vehiculeArrayList.get(position).getModèle());
+
         return itemView;
     }
 
