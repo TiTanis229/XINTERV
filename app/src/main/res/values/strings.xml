@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">XINTERV</string>
+    <string name="title_activity_home_screen">HomeScreenActivity</string>
+    <string name="title_vehicule">Vehicule</string>
+    <string name="title_intervention">Intervention</string>
+    <string name="title_proprietaire">Proprietaire</string>
 </resources>

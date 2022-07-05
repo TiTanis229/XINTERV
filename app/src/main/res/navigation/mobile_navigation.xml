@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_vehicule">
+
+    <fragment
+        android:id="@+id/navigation_vehicule"
+        android:name="com.example.xinterv.ui.vehicule.VehiculeFragment"
+        android:label="@string/title_vehicule"
+        tools:layout="@layout/fragment_vehicule" />
+
+    <fragment
+        android:id="@+id/navigation_intervention"
+        android:name="com.example.xinterv.ui.intervention.InterventionFragment"
+        android:label="@string/title_intervention"
+        tools:layout="@layout/fragment_intervention" />
+
+    <fragment
+        android:id="@+id/navigation_proprietaire"
+        android:name="com.example.xinterv.ui.proprietaire.ProprietaireFragment"
+        android:label="@string/title_proprietaire"
+        tools:layout="@layout/fragment_proprietaire" />
+</navigation>

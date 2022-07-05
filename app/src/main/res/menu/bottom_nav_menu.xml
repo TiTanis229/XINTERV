@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_vehicule"
+        android:icon="@drawable/ic_vehicule"
+        android:title="@string/title_vehicule" />
+
+    <item
+        android:id="@+id/navigation_intervention"
+        android:icon="@drawable/ic_intervention"
+        android:title="@string/title_intervention" />
+
+    <item
+        android:id="@+id/navigation_proprietaire"
+        android:icon="@drawable/ic_proprietaire"
+        android:title="@string/title_proprietaire" />
+
+</menu>
