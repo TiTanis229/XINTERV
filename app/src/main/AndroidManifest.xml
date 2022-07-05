@@ -14,16 +14,11 @@
         android:theme="@style/Theme.XINTERV"
         tools:targetApi="31">
         <activity
-            android:name=".Proprietaire"
-            android:exported="false" />
-        <activity
-            android:name=".Intervention"
-            android:exported="false" />
+            android:name=".HomeScreenActivity"
+            android:exported="false"
+            android:label="@string/title_activity_home_screen" />
         <activity
             android:name=".Vehicule"
-            android:exported="false" />
-        <activity
-            android:name=".MainMenu"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

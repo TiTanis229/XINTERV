@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
 
     EditText editTextLogin, editTextPassword;
     Button buttonOK,buttonFinish;
-    Intent intentMainMenu;
+    Intent intentHomeScreen;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
         ObjetImplement();
 
-        intentMainMenu = new Intent(this, MainMenu.class);
+        intentHomeScreen = new Intent(this, HomeScreenActivity.class);
     }
 
     private void ObjetImplement() {
@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), "Veuillez remplir les champs vides svp", Toast.LENGTH_SHORT).show();
         }
         else {
-            startActivity(intentMainMenu);
+            startActivity(intentHomeScreen);
         }
     }
 
