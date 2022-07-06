@@ -4,11 +4,14 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.Button;
-import android.widget.ImageButton;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -72,8 +75,18 @@ public class VehiculeFragment extends Fragment {
         }
     }
 
-    private void menuDialog(int position,View v){
-        //ImageButton imageButtonCancel;
+    @Override
+    public void onCreateOptionsMenu(@NonNull Menu menu, @NonNull MenuInflater inflater) {
+        super.onCreateOptionsMenu(menu, inflater);
+        inflater.inflate(R.menu.top_add_button,menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        return super.onOptionsItemSelected(item);
+    }
+
+    private void menuDialog(int position, View v){
 
         dialogBuilder = new AlertDialog.Builder(getContext());
         final View popupView = getLayoutInflater().inflate(R.layout.popup_detail_vehicule,null);
@@ -83,21 +96,21 @@ public class VehiculeFragment extends Fragment {
         btnOK.setOnClickListener(view -> dialog.dismiss());
 
         TextView textViewImma, textViewMarq, textViewMode, textViewCoul, textViewPuis, textViewCate, textViewBoit, textViewAnne;
-        textViewImma = popupView.findViewById(R.id.textViewImmatriculation);
+        textViewImma = popupView.findViewById(R.id.editTextViewImmatriculation);
         textViewImma.setText(colVehicule.get(position).getImmatrulation());
-        textViewMarq = popupView.findViewById(R.id.textViewMarque);
+        textViewMarq = popupView.findViewById(R.id.editTextViewMarque);
         textViewMarq.setText(colVehicule.get(position).getMarque());
-        textViewMode = popupView.findViewById(R.id.textViewModele);
+        textViewMode = popupView.findViewById(R.id.editTextViewModele);
         textViewMode.setText(colVehicule.get(position).getModèle());
-        textViewCoul = popupView.findViewById(R.id.textViewCouleur);
+        textViewCoul = popupView.findViewById(R.id.editTextViewCouleur);
         textViewCoul.setText(colVehicule.get(position).getCouleur());
-        textViewPuis = popupView.findViewById(R.id.textViewPuissance);
+        textViewPuis = popupView.findViewById(R.id.editTextViewPuissance);
         textViewPuis.setText(""+colVehicule.get(position).getPuissance());
-        textViewCate = popupView.findViewById(R.id.textViewCategorie);
+        textViewCate = popupView.findViewById(R.id.spinnerCategorie);
         textViewCate.setText(colVehicule.get(position).getCategorie());
-        textViewBoit = popupView.findViewById(R.id.textViewBoite);
+        textViewBoit = popupView.findViewById(R.id.spinnerBoite);
         textViewBoit.setText(colVehicule.get(position).getBoite());
-        textViewAnne = popupView.findViewById(R.id.textViewAnnee);
+        textViewAnne = popupView.findViewById(R.id.editTextViewAnnee);
         textViewAnne.setText(colVehicule.get(position).getAnnee().toString());
 
         dialogBuilder.setView(popupView);
@@ -107,10 +120,30 @@ public class VehiculeFragment extends Fragment {
     }
 
     private void menuAddVehicule(){
-        //ImageButton imageButtonCancel;
 
         dialogBuilder = new AlertDialog.Builder(getContext());
         final View popupView = getLayoutInflater().inflate(R.layout.popup_saisie_vehicule,null);
+
+        Button btnOK = popupView.findViewById(R.id.buttonOK);
+        btnOK.setOnClickListener(view -> dialog.dismiss());
+
+        EditText edtImma, edtMarq, edtMode, edtCoul, edtPuis, edtCate, edtBoit, edtAnne;
+        edtImma = popupView.findViewById(R.id.editTextViewImmatriculation);
+        edtImma.getText().toString();
+        edtMarq = popupView.findViewById(R.id.editTextViewMarque);
+        edtMarq.getText().toString();
+        edtMode = popupView.findViewById(R.id.editTextViewModele);
+        edtMode.getText().toString();
+        edtCoul = popupView.findViewById(R.id.editTextViewCouleur);
+        edtCoul.getText().toString();
+        edtPuis = popupView.findViewById(R.id.editTextViewPuissance);
+        edtPuis.getText().toString();
+        edtCate = popupView.findViewById(R.id.spinnerCategorie);
+        edtCate.getText().toString();
+        edtBoit = popupView.findViewById(R.id.spinnerBoite);
+        edtBoit.getText().toString();
+        edtAnne = popupView.findViewById(R.id.editTextViewAnnee);
+        edtAnne.getText().toString();
 
         dialogBuilder.setView(popupView);
         dialog = dialogBuilder.create();

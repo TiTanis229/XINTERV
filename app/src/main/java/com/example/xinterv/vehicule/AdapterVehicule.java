@@ -52,7 +52,7 @@ public class AdapterVehicule extends BaseAdapter {
             itemView = (ConstraintLayout) convertView;
         }
 
-        TextView txtImmatriculation = itemView.findViewById(R.id.textViewImmatriculation);
+        TextView txtImmatriculation = itemView.findViewById(R.id.editTextViewImmatriculation);
         txtImmatriculation.setText(vehiculeArrayList.get(position).getImmatrulation());
 
         TextView txtDetail = itemView.findViewById(R.id.textViewDetail);

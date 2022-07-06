@@ -21,7 +21,7 @@
         app:layout_constraintBottom_toTopOf="@+id/guidelineVehicule"/>
 
     <TextView
-        android:id="@+id/textViewImmatriculation"
+        android:id="@+id/editTextViewImmatriculation"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
@@ -29,13 +29,13 @@
         android:text="Immatriculation"
         android:textSize="20sp"
         android:textColor="#212121"
-        app:layout_constraintBottom_toTopOf="@+id/textViewMarque"
+        app:layout_constraintBottom_toTopOf="@+id/editTextViewMarque"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/guidelineVehicule" />
 
     <TextView
-        android:id="@+id/textViewMarque"
+        android:id="@+id/editTextViewMarque"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
@@ -43,13 +43,13 @@
         android:text="Marque"
         android:textSize="20sp"
         android:textColor="#212121"
-        app:layout_constraintBottom_toTopOf="@+id/textViewModele"
+        app:layout_constraintBottom_toTopOf="@+id/editTextViewModele"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textViewImmatriculation" />
+        app:layout_constraintTop_toBottomOf="@id/editTextViewImmatriculation" />
 
     <TextView
-        android:id="@+id/textViewModele"
+        android:id="@+id/editTextViewModele"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
@@ -57,13 +57,13 @@
         android:text="Modèle"
         android:textSize="20sp"
         android:textColor="#212121"
-        app:layout_constraintBottom_toTopOf="@+id/textViewCouleur"
+        app:layout_constraintBottom_toTopOf="@+id/editTextViewCouleur"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textViewMarque" />
+        app:layout_constraintTop_toBottomOf="@id/editTextViewMarque" />
 
     <TextView
-        android:id="@+id/textViewCouleur"
+        android:id="@+id/editTextViewCouleur"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
@@ -71,13 +71,13 @@
         android:text="Couleur"
         android:textSize="20sp"
         android:textColor="#212121"
-        app:layout_constraintBottom_toTopOf="@+id/textViewPuissance"
+        app:layout_constraintBottom_toTopOf="@+id/editTextViewPuissance"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textViewModele" />
+        app:layout_constraintTop_toBottomOf="@id/editTextViewModele" />
 
     <TextView
-        android:id="@+id/textViewPuissance"
+        android:id="@+id/editTextViewPuissance"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
@@ -85,13 +85,13 @@
         android:text="Puissance"
         android:textSize="20sp"
         android:textColor="#212121"
-        app:layout_constraintBottom_toTopOf="@+id/textViewCategorie"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerCategorie"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textViewCouleur" />
+        app:layout_constraintTop_toBottomOf="@id/editTextViewCouleur" />
 
     <TextView
-        android:id="@+id/textViewCategorie"
+        android:id="@+id/spinnerCategorie"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
@@ -99,13 +99,13 @@
         android:text="Categorie"
         android:textSize="20sp"
         android:textColor="#212121"
-        app:layout_constraintBottom_toTopOf="@+id/textViewBoite"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerBoite"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textViewPuissance" />
+        app:layout_constraintTop_toBottomOf="@id/editTextViewPuissance" />
 
     <TextView
-        android:id="@+id/textViewBoite"
+        android:id="@+id/spinnerBoite"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
@@ -113,13 +113,13 @@
         android:text="Boite de vitesse"
         android:textSize="20sp"
         android:textColor="#212121"
-        app:layout_constraintBottom_toTopOf="@+id/textViewAnnee"
+        app:layout_constraintBottom_toTopOf="@+id/editTextViewAnnee"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textViewCategorie" />
+        app:layout_constraintTop_toBottomOf="@id/spinnerCategorie" />
 
     <TextView
-        android:id="@+id/textViewAnnee"
+        android:id="@+id/editTextViewAnnee"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
@@ -130,7 +130,7 @@
         app:layout_constraintBottom_toTopOf="@id/buttonOK"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textViewBoite" />
+        app:layout_constraintTop_toBottomOf="@id/spinnerBoite" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guidelineVehicule"
