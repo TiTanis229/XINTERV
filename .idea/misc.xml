@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/TiTanis/Documents/DSMC/Workspace/XINTERV/app/src/main/res/drawable-hdpi/custom_input.xml" value="0.2765" />
         <entry key="..\:/Users/TiTanis/Documents/DSMC/Workspace/XINTERV/app/src/main/res/drawable-mdpi/ic_intervention.xml" value="0.389" />
         <entry key="..\:/Users/TiTanis/Documents/DSMC/Workspace/XINTERV/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.389" />
         <entry key="..\:/Users/TiTanis/Documents/DSMC/Workspace/XINTERV/app/src/main/res/drawable/ic_vehicule.xml" value="0.389" />
@@ -20,8 +21,11 @@
         <entry key="..\:/Users/TiTanis/Documents/DSMC/Workspace/XINTERV/app/src/main/res/layout/fragment_proprietaire.xml" value="0.2988679352838745" />
         <entry key="..\:/Users/TiTanis/Documents/DSMC/Workspace/XINTERV/app/src/main/res/layout/fragment_vehicule.xml" value="0.3338541666666667" />
         <entry key="..\:/Users/TiTanis/Documents/DSMC/Workspace/XINTERV/app/src/main/res/layout/itemview_vehicule.xml" value="0.2988679352838745" />
+        <entry key="..\:/Users/TiTanis/Documents/DSMC/Workspace/XINTERV/app/src/main/res/layout/popup_detail_vehicule.xml" value="0.29528985507246375" />
+        <entry key="..\:/Users/TiTanis/Documents/DSMC/Workspace/XINTERV/app/src/main/res/layout/popup_saisie_vehicule.xml" value="0.3338541666666667" />
         <entry key="..\:/Users/TiTanis/Documents/DSMC/Workspace/XINTERV/app/src/main/res/menu/bottom_nav_menu.xml" value="0.5046875" />
         <entry key="..\:/Users/TiTanis/Documents/DSMC/Workspace/XINTERV/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.389" />
+        <entry key="..\:/Users/TiTanis/Documents/DSMC/Workspace/XINTERV/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2765" />
       </map>
     </option>
   </component>

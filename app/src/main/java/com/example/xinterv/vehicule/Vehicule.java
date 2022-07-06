@@ -9,13 +9,13 @@ public class Vehicule {
     String immatrulation;
     String marque;
     String modèle;
-    Color couleur;
+    String couleur;
     int puissance;
     String categorie;
     String boite;
     Date annee;
 
-    public Vehicule(String immatrulation, String marque, String modèle, Color couleur, int puissance, String categorie, String boite, Date annee) {
+    public Vehicule(String immatrulation, String marque, String modèle, String couleur, int puissance, String categorie, String boite, Date annee) {
         this.immatrulation = immatrulation;
         this.marque = marque;
         this.modèle = modèle;
@@ -50,11 +50,11 @@ public class Vehicule {
         this.modèle = modèle;
     }
 
-    public Color getCouleur() {
+    public String getCouleur() {
         return couleur;
     }
 
-    public void setCouleur(Color couleur) {
+    public void setCouleur(String couleur) {
         this.couleur = couleur;
     }
 

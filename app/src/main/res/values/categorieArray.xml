@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="categorie_array">
+        <item>Catégorie</item>
         <item>Citadine</item>
         <item>Berline</item>
         <item>Break</item>

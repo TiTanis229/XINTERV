@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="boite_array">
+        <item>Boîte de vitesse</item>
+        <item>Manuelle</item>
+        <item>Automatique</item>
+        <item>Semi-automatique</item>
     </string-array>
 </resources>
