@@ -36,12 +36,12 @@ public class MainActivity extends AppCompatActivity {
         buttonFinish.setOnClickListener(new Quitter());
     }
 
-    private void Verification() {
+    private void VerificationEditText() {
         if (editTextLogin.getText().toString().equals("") || editTextPassword.getText().toString().equals("")){
             Toast.makeText(getApplicationContext(), "Veuillez remplir les champs vides svp", Toast.LENGTH_SHORT).show();
         }
         else {
-            startActivity(intentHomeScreen);
+            verificationID();
         }
     }
 
@@ -51,11 +51,23 @@ public class MainActivity extends AppCompatActivity {
             finish();
         }
     }
-
     private class Valider implements View.OnClickListener {
         @Override
         public void onClick(View view) {
-            Verification();
+            VerificationEditText();
         }
     }
+
+    private void verificationID() {
+        String iD = editTextLogin.getText().toString();
+        String password = editTextPassword.getText().toString();
+
+        if (iD.equals("admin") && password.equals("azerty")){
+            startActivity(intentHomeScreen);
+        }else {
+            editTextPassword.setError("Mot de passe incorect");
+            editTextLogin.setError("Identifiant  incorect");
+        }
+    }
+
 }
