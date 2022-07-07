@@ -13,9 +13,9 @@ public class Vehicule {
     int puissance;
     String categorie;
     String boite;
-    Date annee;
+    int annee;
 
-    public Vehicule(String immatrulation, String marque, String modèle, String couleur, int puissance, String categorie, String boite, Date annee) {
+    public Vehicule(String immatrulation, String marque, String modèle, String couleur, int puissance, String categorie, String boite, int annee) {
         this.immatrulation = immatrulation;
         this.marque = marque;
         this.modèle = modèle;
@@ -82,11 +82,11 @@ public class Vehicule {
         this.boite = boite;
     }
 
-    public Date getAnnee() {
+    public int getAnnee() {
         return annee;
     }
 
-    public void setAnnee(Date annee) {
+    public void setAnnee(int annee) {
         this.annee = annee;
     }
 
