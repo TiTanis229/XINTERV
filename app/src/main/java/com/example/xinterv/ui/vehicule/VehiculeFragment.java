@@ -92,7 +92,6 @@ public class VehiculeFragment extends Fragment {
     private class newVehicule implements View.OnClickListener {
         @Override
         public void onClick(View view) {
-            Toast.makeText(getContext(), "coucou", Toast.LENGTH_SHORT).show();
             menuAddVehicule();
             adapterVehicule.notifyDataSetChanged();
         }
@@ -136,35 +135,24 @@ public class VehiculeFragment extends Fragment {
         dialogBuilder = new AlertDialog.Builder(getContext());
         final View popupView = getLayoutInflater().inflate(R.layout.popup_saisie_vehicule,null);
 
-
-        String imma,marq,mode,coul,cate,boit;
-        int puis,anne;
         EditText edtImma, edtMarq, edtMode, edtCoul, edtPuis, edtAnne;
         Spinner spinBoit, spinCate;
 
         edtImma = popupView.findViewById(R.id.editTextViewImmatriculation);
-        imma = edtImma.getText().toString();
 
         edtMarq = popupView.findViewById(R.id.editTextViewMarque);
-        marq = edtMarq.getText().toString();
 
         edtMode = popupView.findViewById(R.id.editTextViewModele);
-        mode = edtMode.getText().toString();
 
         edtCoul = popupView.findViewById(R.id.editTextViewCouleur);
-        coul = edtCoul.getText().toString();
 
         edtPuis = popupView.findViewById(R.id.editTextViewPuissance);
-        //puis = Integer.parseInt(edtPuis.getText().toString());
 
         spinCate = popupView.findViewById(R.id.spinnerCategorie);
-        cate = spinCate.getSelectedItem().toString();
 
         spinBoit = popupView.findViewById(R.id.spinnerBoite);
-        boit = spinBoit.getSelectedItem().toString();
 
         edtAnne = popupView.findViewById(R.id.editTextViewAnnee);
-        //anne = Integer.parseInt(edtAnne.getText().toString());
 
         dialogBuilder.setView(popupView);
         dialog = dialogBuilder.create();
@@ -173,7 +161,19 @@ public class VehiculeFragment extends Fragment {
 
         Button btnOK = popupView.findViewById(R.id.buttonOK);
         btnOK.setOnClickListener(view -> {
-            colVehicule.add(new Vehicule(imma,marq,mode,coul,200,cate,boit,2018));
+            String imma,marq,mode,coul,cate,boit;
+            int puis,anne;
+
+            imma = edtImma.getText().toString();
+            marq = edtMarq.getText().toString();
+            mode = edtMode.getText().toString();
+            coul = edtCoul.getText().toString();
+            cate = spinCate.getSelectedItem().toString();
+            boit = spinBoit.getSelectedItem().toString();
+            puis = Integer.parseInt(edtPuis.getText().toString());
+            anne = Integer.parseInt(edtAnne.getText().toString());
+
+            colVehicule.add(new Vehicule(imma,marq,mode,coul,puis,cate,boit,anne));
             adapterVehicule.notifyDataSetChanged();
             dialog.dismiss();
         });
